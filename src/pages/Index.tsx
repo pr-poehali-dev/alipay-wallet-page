@@ -85,6 +85,168 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Trust Statistics */}
+      <section className="py-16 px-4 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid md:grid-cols-4 gap-8 text-center">
+            <div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">150K+</div>
+              <div className="text-gray-600">Довольных клиентов</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-green-600 mb-2">99.9%</div>
+              <div className="text-gray-600">Успешных операций</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-purple-600 mb-2">5 лет</div>
+              <div className="text-gray-600">На рынке</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-orange-600 mb-2">24/7</div>
+              <div className="text-gray-600">Поддержка</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Security Certificates */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">
+            Лицензии и сертификаты
+          </h2>
+          <div className="flex justify-center items-center gap-8 flex-wrap">
+            <div className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm">
+              <img 
+                src="/img/fb405cb4-8c94-42d2-9c12-50e2a8d0fc4c.jpg" 
+                alt="SSL Certificate" 
+                className="w-12 h-12"
+              />
+              <div className="text-left">
+                <div className="font-semibold text-gray-900">SSL 256-bit</div>
+                <div className="text-sm text-gray-600">Шифрование</div>
+              </div>
+            </div>
+            <div className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm">
+              <Icon name="Shield" className="text-green-600" size={48} />
+              <div className="text-left">
+                <div className="font-semibold text-gray-900">PCI DSS</div>
+                <div className="text-sm text-gray-600">Сертификат</div>
+              </div>
+            </div>
+            <div className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm">
+              <Icon name="Lock" className="text-blue-600" size={48} />
+              <div className="text-left">
+                <div className="font-semibold text-gray-900">ISO 27001</div>
+                <div className="text-sm text-gray-600">Безопасность</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Customer Reviews */}
+      <section className="py-20 px-4 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-4xl font-bold text-center text-gray-900 mb-16">
+            Отзывы наших клиентов
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="border-0 shadow-lg">
+              <CardContent className="p-8">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" className="text-yellow-400 fill-current" size={20} />
+                  ))}
+                </div>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  "Пользуюсь сервисом уже полгода. Деньги всегда приходят быстро, комиссии действительно низкие. Поддержка отвечает мгновенно."
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                    <span className="text-blue-600 font-semibold">А</span>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-gray-900">Анна К.</div>
+                    <div className="text-sm text-gray-500">Предприниматель</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg">
+              <CardContent className="p-8">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" className="text-yellow-400 fill-current" size={20} />
+                  ))}
+                </div>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  "Отличный сервис! Раньше мучился с пополнением Alipay, теперь всё решается за пару кликов. Рекомендую всем."
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                    <span className="text-green-600 font-semibold">М</span>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-gray-900">Михаил Р.</div>
+                    <div className="text-sm text-gray-500">Импортёр</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg">
+              <CardContent className="p-8">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" className="text-yellow-400 fill-current" size={20} />
+                  ))}
+                </div>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  "Безопасно и надёжно. Все операции проходят без проблем, техподдержка всегда на связи. Доверяю только этому сервису."
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                    <span className="text-purple-600 font-semibold">Е</span>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-gray-900">Елена С.</div>
+                    <div className="text-sm text-gray-500">Маркетолог</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Money Back Guarantee */}
+      <section className="py-16 px-4 bg-gradient-to-r from-green-50 to-blue-50">
+        <div className="container mx-auto max-w-4xl text-center">
+          <div className="bg-white p-8 rounded-2xl shadow-lg">
+            <Icon name="Shield" className="text-green-600 mx-auto mb-4" size={64} />
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              100% гарантия возврата средств
+            </h3>
+            <p className="text-gray-600 mb-6 leading-relaxed">
+              Если по нашей вине средства не поступят на ваш кошелек в течение 24 часов, 
+              мы вернём вам деньги в полном объёме + компенсация 500 рублей за неудобства.
+            </p>
+            <div className="flex justify-center gap-8 text-sm text-gray-500">
+              <div className="flex items-center gap-2">
+                <Icon name="Clock" size={16} />
+                <span>Возврат в течение 1 часа</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Icon name="CheckCircle" size={16} />
+                <span>Без дополнительных вопросов</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Steps Section */}
       <section className="py-20 px-4 bg-gray-50">
         <div className="container mx-auto max-w-4xl">
