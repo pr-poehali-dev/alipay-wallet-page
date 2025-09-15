@@ -26,6 +26,7 @@ const Index = () => {
           </p>
           <Button 
             className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105"
+            onClick={() => window.open('https://t.me/devotedzen_bot', '_blank')}
           >
             Пополнить сейчас
             <Icon name="ArrowRight" className="ml-2" size={20} />
@@ -330,7 +331,10 @@ const Index = () => {
                   className="w-full"
                 />
               </div>
-              <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-lg rounded-xl">
+              <Button 
+                className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-lg rounded-xl"
+                onClick={() => window.open('https://t.me/devotedzen_bot', '_blank')}
+              >
                 Пополнить кошелек
                 <Icon name="CreditCard" className="ml-2" size={20} />
               </Button>
